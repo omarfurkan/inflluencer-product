@@ -163,4 +163,36 @@ hr {
 .collection-part a i {
   margin-left: 8px;
 }
-/*  */
+
+/* footer */
+
+.footer-part {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #0a0826;
+  text-align: center;
+  color: #ffffff;
+}
+
+.footer-part h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+.footer-part p {
+  font-size: 14px;
+  font-weight: bold;
+  color: #d9dbe1;
+  font-family: "Manrope", sans-serif;
+  margin-top: 0px;
+  margin-bottom: 16px;
+}
+
+.footer-part i {
+  margin-left: 16px;
+}
+
+.footer-part i:first-child {
+  margin-left: 0px;
+}
