@@ -10,6 +10,7 @@ body {
   padding: 0;
   font-family: "Poppins", sans-serif;
   color: #3a3a3a;
+  box-sizing: border-box;
 }
 .container {
   width: 1280px;
@@ -164,6 +165,52 @@ hr {
   margin-left: 8px;
 }
 
+/* customers testimonial part */
+
+.customer-testimonial-part h3 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 100px 0 30px;
+}
+.cutomers-feedback {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 70px;
+}
+
+.costomers-photo img {
+  width: 250px;
+}
+.customer-says {
+  display: none;
+  text-align: center;
+  font-weight: 600;
+  line-height: 24px;
+  background-color: #f8f8f8;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.cutomers-feedback:hover .customer-says {
+  position: relative;
+  display: block;
+  animation: customersays;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes customersays {
+  0% {
+    right: -1000px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+
 /* footer */
 
 .footer-part {
@@ -195,4 +242,12 @@ hr {
 
 .footer-part i:first-child {
   margin-left: 0px;
+}
+
+/*Responsive  for mobile device*/
+
+@media (max-width: 360px) {
+  .container {
+    width: 100%;
+  }
 }
